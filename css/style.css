@@ -160,7 +160,6 @@ a.menu-link:hover {
   }
 }
 /*===РЕЗИНОВАЯ ВЕРСТКА====*/
-
 /*===MOBILE====*/
 @media screen and (max-width: 640px){
    .header {
@@ -270,8 +269,11 @@ a.menu-link:hover {
    background-position: right 13px center;
    overflow: hidden
 }
-.feedback-field:focus{
-   color: #000;
+
+.feedback-field:focus {
+   outline: none; 
+   border: 1px #b59f5b solid;
+
 }
 .feedback-radio-hint {
    margin-right: 13px;
@@ -309,6 +311,11 @@ input[type="radio"]{
    font-size: 13px;
    background-color: #f4f7f6;
    resize: none;
+}
+.feedback-textarea:focus {
+   outline: none; 
+   border: 1px #b59f5b solid;
+
 }
 .feedback-button {
    width: 100%;
@@ -400,7 +407,7 @@ input[type="radio"]{
 }
 .trends-wrp {
    display: flex;
-   justify-content: space-between;
+  
 }
 .trends-item-wrp {
    display: flex;
@@ -527,11 +534,25 @@ input[type="radio"]{
        margin-bottom: 44px;
   }
 }
+
+@media (max-width: 641px) and (orientation: landscape) {
+   .trends-wrp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-around
+ }
+
+   .trends-item-wrp{
+      width:42%;
+   }
+}
 @media (max-width: 641px) and (orientation: portrait){
    .trends-item-wrp {
        width: 93%;
   }
 }
+
+
 /*===wrapper page-container====*/
 .wrapper {
    box-sizing: border-box;
