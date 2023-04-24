@@ -539,11 +539,11 @@ input[type="radio"]{
    .trends-wrp {
       display: flex;
       flex-wrap: wrap;
-      justify-content:space-around
+
  }
 
    .trends-item-wrp{
-      width:42%;
+      width:41%;
    }
 }
 @media (max-width: 641px) and (orientation: portrait){
