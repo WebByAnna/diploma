@@ -1,2 +1,3 @@
 # The final work
-https://pogozhina.github.io/diploma/
+
+https://webbyanna.github.io/diploma/
